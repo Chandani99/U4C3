@@ -13,7 +13,8 @@ public class TemporaryEmployee extends Employee{
 	public void calculateSalary() {
 		double sal=hoursWorked*hourlyWages;
 		
-		this.setSalary(sal);
+		this.salary= sal;
+		System.out.println("Salary: "+salary );
 		
 	}
 	

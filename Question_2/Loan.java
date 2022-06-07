@@ -7,12 +7,13 @@ public class Loan {
 //	}
 	 public double calculateLoanAmount(Employee employeeObj) {
 		 if(employeeObj instanceof PermanentEmployee) {
-			 
-			 double loan=employeeObj.getSalary()*15/100;
+			 PermanentEmployee pe=(PermanentEmployee)employeeObj;
+			 double loan=pe.salary*15/100;
 			 return loan;
 		 }
 		 else if(employeeObj instanceof TemporaryEmployee) {
-			 double loan=employeeObj.getSalary()*15/100;
+			 TemporaryEmployee te= (TemporaryEmployee)employeeObj; 
+			 double loan=te.salary*15/100;
 			 return loan;
 		 }
 		return 0;

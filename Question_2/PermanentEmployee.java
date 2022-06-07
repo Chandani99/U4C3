@@ -17,7 +17,9 @@ public class PermanentEmployee extends Employee{
 		
 		double sal=basicPay-pfAmount;
 		
-		this.setSalary(sal);
+		this.salary=sal;
+		
+		System.out.println("Salary: "+salary );
 		
 	}
 

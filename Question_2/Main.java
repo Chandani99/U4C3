@@ -15,20 +15,20 @@ public class Main {
 		double result1=l.calculateLoanAmount(em1);
 		double result2 =l.calculateLoanAmount(em2);
 		
-		System.out.println("Permanent Employee Details========= " );
+		System.out.println("Permanent Employee Details========= \n" );
 		System.out.println("Id: " +em.getEmployeeId());
 		System.out.println("Name: " +em.getEmployeeName());
-		System.out.println("Salary: " +em.getSalary());
-		System.out.println("Loan of permanent Employee: "+ result );
+		em.calculateSalary();
+		System.out.println("Loan of permanent Employee: "+ result +"\n");
 		
-		System.out.println("Temporary Employee Details========= " );
+		System.out.println("Temporary Employee Details========= \n" );
 		System.out.println("Id: " +em1.getEmployeeId());
 		System.out.println("Name: " +em1.getEmployeeName());
-		System.out.println("Salary: " +em1.getSalary());
-		System.out.println("Loan of permanent Employee: "+ result1 );
+		em1.calculateSalary();
+		System.out.println("Loan of permanent Employee: "+ result1 +"\n");
 		
 		
-		System.out.println("Null Employee Details========= " );
+		System.out.println("Null Employee Details========= \n" );
 		System.out.println("Loan of permanent Employee: "+ result2 );
 	}
 

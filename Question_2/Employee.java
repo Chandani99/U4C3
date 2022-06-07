@@ -27,13 +27,7 @@ public abstract class Employee {
 		this.employeeName = employeeName;
 	}
 
-	public double getSalary() {
-		return salary;
-	}
-
-	public void setSalary(double salary) {
-		this.salary = salary;
-	}
+	
 	
 	
 	public abstract void calculateSalary();
